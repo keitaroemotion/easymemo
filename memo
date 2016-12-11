@@ -1,0 +1,6 @@
+FILE=$(date +%y%m%d.memo)
+DIRECTORY="/usr/local/etc/memo"
+if [ ! -d "$DIRECTORY"  ]; then
+  mkdir -p $DIRECTORY
+fi
+vim $FILE
